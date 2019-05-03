@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: object entry
+# key: ent
+# contributor: br3athein
+# --
+"${1:name}": "${2:value}",

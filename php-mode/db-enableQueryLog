@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Enable query log @ Laravel
+# key: db-querylog
+# group: Laravel
+# contributor: br3athein
+# --
+$>\DB::enableQueryLog();

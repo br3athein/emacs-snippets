@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: JSON code block
+# key: json_
+# contributor: br3athein
+# --
+#+BEGIN_SRC json
+$0
+#+END_SRC

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Python code block
+# key: python_
+# contributor: br3athein
+# --
+#+BEGIN_SRC python
+$0
+#+END_SRC

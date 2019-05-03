@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: foreign key @ Laravel
+# key: fk
+# group: Laravel
+# contributor: br3athein
+# --
+$${1:table}->integer('${2:model}${3:_id}')->unsigned()${4:->nullable()};
+$$1->foreign('$2$3')
+->references('${5:id}')$>->on('${6:$2s}')${7:
+->onDelete('${8:cascade$(yas-choose-value '("cascade" "restrict"))}')};

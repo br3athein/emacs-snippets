@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: PHP code block
+# key: php_
+# contributor: br3athein
+# --
+#+BEGIN_SRC php
+$0
+#+END_SRC

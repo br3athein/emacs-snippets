@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: \Debugbar::info(...)
+# key: debugbar
+# contributor: br3athein
+# --
+\Debugbar::info($0);

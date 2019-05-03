@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: self.env[...]
+# key: senv
+# group: odoo
+# contributor: br3athein
+# --
+self.env['${1:module}.${2:model}']$0

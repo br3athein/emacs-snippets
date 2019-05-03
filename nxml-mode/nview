@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: define Odoo view extension
+# key: nview
+# group: Odoo
+# contributor: br3athein
+# --
+<record id="view_${1:new_record_id}" model="ir.ui.view">
+  <field name="name">${2:View name}</field>
+  <field name="model">${3:module_name}.${4:model_name}</field>
+  <field name="inherit_id" ref="${5:$3}.${6:view_id}" />
+  <field name="arch" type="xml">
+
+    $0
+
+  </field>
+</record>

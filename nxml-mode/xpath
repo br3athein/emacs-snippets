@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name : <xpath expr="..." />
+# key: <xpath>
+# contributor: br3athein
+# --
+<xpath expr="${1://${2:field}[@${3:name}='${4:attrval}']}" position="${5:after}">
+  $0
+</xpath>

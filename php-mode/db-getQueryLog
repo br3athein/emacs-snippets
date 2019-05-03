@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Get query log @ Laravel
+# key: db-getquerylog
+# group: Laravel
+# contributor: br3athein
+# --
+$>\DB::getQueryLog()

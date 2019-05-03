@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: use
+# key: use
+# group: Laravel
+# contributor: br3athein
+# --
+use ${1:Used$
+(--> yas-text
+    (subst-char-in-string ?/ ?\\\\ it)
+    (upcase-initials it))};

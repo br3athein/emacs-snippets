@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name : set -o nounset
+# key : nounset
+# contributor: br3athein
+# --
+set -o nounset

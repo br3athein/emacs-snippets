@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name : set -o errexit
+# key : errexit
+# contributor: br3athein
+# --
+set -o errexit

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: model
+# key: model
+# contributor: br3athein
+# --
+class ${1:$(replace-regexp-in-string "\\\." "" (capitalize yas-text))}(models.Model):
+    _name = '${1:model.name}'
+    _inherit = '$1'
+
+    $0

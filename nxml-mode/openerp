@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: <openerp />
+# key: <openerp>
+# group: Odoo
+# contributor: br3athein
+# --
+<openerp>
+  <data>
+
+  $0
+
+  </data>
+</openerp>

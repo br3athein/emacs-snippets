@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: transaction
+# key: transaction
+# group: Laravel
+# contributor: br3athein
+# --
+\DB::transaction(function () {
+    $0
+});

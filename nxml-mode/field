@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: <field name="..."></field>
+# key: <field>
+# group: Odoo
+# contributor: br3athein
+# --
+<field name="${1:field_name}">$0</field>
