@@ -1,0 +1,43 @@
+# -*- mode: snippet -*-
+# name: Illuminate\Bus\Dispatchable job @ Laravel
+# key: job
+# group: Laravel
+# contributor: br3athein
+# --
+<?php
+
+namespace `
+(--> (spacemacs--projectile-directory-path)
+  (directory-file-name it)
+  (subst-char-in-string ?/ ?\\ it)
+  (replace-regexp-in-string "web\\\\" "" it)
+  (upcase-initials it))`;
+
+use Illuminate\Foundation\Bus\Dispatchable;
+
+class ${1:`(yas-php-get-class-name-by-file-name)`}
+{
+  use Dispatchable;
+
+  ${2:$ (--> (yas-text)
+    (split-string it ",")
+    (mapcar (lambda (maybe-typehinted-name)
+      (-last-item (split-string (s-trim maybe-typehinted-name)))) it)
+    (mapcar (lambda (name) (format "protected %s;" name)) it)
+    (s-join "\n" it))}
+
+  public function __construct(${2:$args})
+  {
+    ${2:$ (--> (yas-text)
+      (split-string it ",")
+      (mapcar (lambda (maybe-typehinted-name)
+      (-last-item (split-string (s-trim maybe-typehinted-name)))) it)
+      (mapcar (lambda (name) (format "$this->%s = %s;" name name)) it)
+      (s-join "\n" it))}
+  }
+
+  public function handle()
+  {
+    $0
+  }
+}
