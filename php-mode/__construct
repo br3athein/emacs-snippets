@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: class constructor skeleton
+# key: __construct
+# contributor: br3athein
+# --
+${1:$(s-join "\n"
+  (mapcar (apply-partially 'format "protected $%s;")
+    (php-snippets-extract-variable-names-from-signature yas-text)))}
+
+public function __construct(${1:$args})
+{
+  ${1:$(s-join "\n"
+    (mapcar (lambda (name) (format "$this->%s = $%s;" name name))
+      (php-snippets-extract-variable-names-from-signature yas-text)))}
+}

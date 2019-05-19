@@ -3,11 +3,7 @@
 # key: namespace
 # contributor: br3athein
 # --
-namespace `
-(--> (spacemacs--projectile-directory-path)
-  (directory-file-name it)
-  (subst-char-in-string ?/ ?\\ it)
-  (replace-regexp-in-string "web\\\\" "" it)
-  (upcase-initials it))`;
+namespace `(php-snippets-guess-namespace "web")`;
+
 
 $0
