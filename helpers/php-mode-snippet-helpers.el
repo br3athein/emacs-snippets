@@ -8,7 +8,7 @@
 (require 's)
 (require 'dash)
 
-(defun php-snippets-extract-variable-names-from-signature (signature)
+(defun yas-php-extract-variable-names-from-signature (signature)
   "Retrieve a list of variable names from a string SIGNATURE.
 For instance, given the signature \"Foo $bar, $baz\", return
 '(\"bar\", \"baz\")."
@@ -22,7 +22,7 @@ For instance, given the signature \"Foo $bar, $baz\", return
                       (substring it (if (s-starts-with? "$" it) 1))))
                it)))
 
-(defun php-snippets-guess-namespace (&optional namespace-root)
+(defun yas-php-guess-namespace (&optional namespace-root)
   "Guess the current class namespace."
   (--> (spacemacs--projectile-directory-path)
        (directory-file-name it)

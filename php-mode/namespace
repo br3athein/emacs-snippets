@@ -3,7 +3,7 @@
 # key: namespace
 # contributor: br3athein
 # --
-namespace `(php-snippets-guess-namespace "web")`;
+namespace `(yas-php-guess-namespace "web")`;
 
 
 $0
