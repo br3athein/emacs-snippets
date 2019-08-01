@@ -5,5 +5,4 @@
 # --
 namespace `(yas-php-guess-namespace "web")`;
 
-
 $0
