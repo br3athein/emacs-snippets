@@ -13,6 +13,7 @@
 For instance, given the signature \"Foo $bar, $baz\", return
 '(\"bar\", \"baz\")."
   (--> signature
+       (car (split-string it "="))
        (split-string it ",")
        (mapcar (lambda (maybe-typehinted-name)
                  (--> maybe-typehinted-name
