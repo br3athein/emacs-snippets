@@ -3,6 +3,6 @@
 # key: namespace
 # contributor: br3athein
 # --
-namespace `(yas-php-guess-namespace "web")`;
+namespace `(plist-get (phpactor-file-information) :class_namespace)`;
 
 $0
