@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Route::post @ Laravel
+# key: Route-post
+# contributor: br3athein
+# --
+Route::post('${1:routeName}', '${2:Controller}${3:@${4:$1}}')
+->name('$1');

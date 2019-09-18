@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Route::get @ Laravel
+# key: Route-get
+# contributor: br3athein
+# --
+Route::get('${1:routeName}', '${2:Controller}${3:@${4:$1}}')
+->name('$1');
