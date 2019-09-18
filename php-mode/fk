@@ -7,6 +7,6 @@
 $${1:table}->integer('${2:model}${3:_id}')->unsigned()${4:->nullable()};
 $$1->foreign(
 '$2$3'${5:,
-'${6:prefix}_$2$3_foreign'
-})->references('${7:id}')$>->on('${8:$2s}')${9:
+'${6:prefix}_$2$3_foreign'}
+)->references('${7:id}')$>->on('${8:$2s}')${9:
 ->onDelete('${10:cascade$(yas-choose-value '("cascade" "restrict"))}')};
