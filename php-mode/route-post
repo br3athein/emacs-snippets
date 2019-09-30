@@ -3,5 +3,5 @@
 # key: Route-post
 # contributor: br3athein
 # --
-Route::post('${1:routeName}', '${2:Controller}${3:@${4:$1}}')
+Route::post('${1:routeName}', '${2:${1:$(string-inflection-pascal-case-function yas-text)}}${3:@${4:$1}}')
 ->name('$1');
